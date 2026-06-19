@@ -1,8 +1,23 @@
 # KoreanHolidays
 
-대한민국 공휴일(대체공휴일 포함)을 런타임 의존성 없이 조회하는 .NET 라이브러리.
+[![CI](https://github.com/iyulab/KoreanHolidays.NET/actions/workflows/ci.yml/badge.svg)](https://github.com/iyulab/KoreanHolidays.NET/actions/workflows/ci.yml)
+[![NuGet](https://img.shields.io/nuget/v/KoreanHolidays.svg)](https://www.nuget.org/packages/KoreanHolidays/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+대한민국 공휴일(대체공휴일 포함)을 런타임 의존성 없이 조회하는 .NET 라이브러리. **net8.0 / net9.0 / net10.0** 멀티타깃, 외부 의존성 없음(BCL only).
 
 데이터 출처: [hyunbinseo/holidays-kr](https://github.com/hyunbinseo/holidays-kr) — 우주항공청 발표 **월력요항** 기반.
+
+## API 요약
+
+| 멤버 | 설명 |
+|------|------|
+| `IsPublicHoliday(DateOnly)` | 공휴일 여부 (미지원 연도 → `ArgumentOutOfRangeException`) |
+| `GetHolidays(DateOnly)` | 해당 날짜의 공휴일 목록 (없으면 빈 리스트) |
+| `TryGetHolidays(DateOnly, out …)` | 예외 없이 분기 — 미지원 연도/비공휴일이면 `false` |
+| `GetHolidays(int year)` | 연도 전체 공휴일 (날짜 오름차순) |
+| `GetHolidaysInRange(DateOnly, DateOnly)` | 기간(양끝 포함) 공휴일 (날짜 오름차순) |
+| `MinYear` / `MaxYear` / `IsSupportedYear(int)` | 지원 범위 (현재 2018~2026) |
 
 ## 설치
 
