@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/iyulab/KoreanHolidays.NET/actions/workflows/ci.yml/badge.svg)](https://github.com/iyulab/KoreanHolidays.NET/actions/workflows/ci.yml)
 [![NuGet](https://img.shields.io/nuget/v/KoreanHolidays.svg)](https://www.nuget.org/packages/KoreanHolidays/)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/KoreanHolidays.svg)](https://www.nuget.org/packages/KoreanHolidays/)
+[![.NET](https://img.shields.io/badge/.NET-8.0%20%7C%209.0%20%7C%2010.0-512BD4.svg)](https://dotnet.microsoft.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 대한민국 공휴일(대체공휴일 포함)을 런타임 의존성 없이 조회하는 .NET 라이브러리. **net8.0 / net9.0 / net10.0** 멀티타깃, 외부 의존성 없음(BCL only).
